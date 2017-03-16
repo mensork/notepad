@@ -1,8 +1,8 @@
 class Memo < Post
 
   def read_from_console
-    puts "Введите текст:"
-    puts "Чтобы закончить, введите \"end\".\n\r \n\r"
+    puts "Введи текст:"
+    puts "Чтобы закончить, введи \"end\".\n\r \n\r"
     line = nil
     @text = []
 

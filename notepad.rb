@@ -12,11 +12,13 @@ require_relative "memo.rb"
 require_relative "task.rb"
 require_relative "link.rb"
 
+puts "Ты в блокноте, чувак. Тут всё серьезно.\n\r"
+sleep 0.7
 choice = -1
 choices = Post.range
 
 until choice >= 0 && choice < choices.size
-  puts "Выберите тип записи:"
+  puts "Выбери тип записи:"
   choices.each_with_index do |element, index|
     puts "#{index}. #{element}\r"
   end
@@ -27,6 +29,8 @@ entry = Post.create(choice)
 
 entry.read_from_console
 entry.save
+
+puts "Ну, всё записано, котан"
 
 
 

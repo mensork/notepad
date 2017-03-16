@@ -10,7 +10,7 @@ class Task < Post
     puts "Что нужно сделать?"
     @text = STDIN.gets.chomp
 
-    puts "К какому сроку? Введите дату в формате YYYY-MM-DD"
+    puts "К какому сроку? Введи дату в формате YYYY-MM-DD"
     input = STDIN.gets.chomp
     @duty = "\n\rСделать до: #{Date.parse(input)}"
   end
